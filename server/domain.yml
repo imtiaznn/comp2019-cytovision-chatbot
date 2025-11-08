@@ -1,0 +1,70 @@
+version: "3.1"
+
+# Custom actions defined in actions.py
+# actions:
+
+# Values that are read and written to by chatbot
+# slots:
+
+# Chatbot responses
+responses:
+  # utter_ask_recipient:
+  #   - text: "Who would you like to send money to?"
+
+  # utter_ask_final_confirmation:
+  #   - text: "Please confirm: you want to transfer {amount} to {recipient}?"
+  # utter_transfer_cancelled:
+  #   - text: "Your transfer has been cancelled."
+
+  # utter_ask_amount:
+  #   - text: "How much money would you like to send?"
+
+  # utter_transfer_complete:
+  #   - text: "All done. {amount} has been sent to {recipient}."
+
+  # utter_insufficient_funds:
+  #   - text: "You do not have enough funds to make this transaction."
+
+  utter_free_chitchat_response:
+    - text: "placeholder"
+      metadata:
+        rephrase: True
+        rephrase_prompt: |
+          The following is a conversation with an AI assistant to be deployed on a company website.
+          The assistant can help the user gain information on the product and services provided by the company.
+          The assistant is helpful, creative, clever, and very friendly.
+          The user is making small talk, and the assistant should respond, keeping things short and light.
+          Context / previous conversation with the user:
+          {{history}}
+          {{current_input}}
+          Suggested AI Response:
+
+  # utter_general_faq:
+  #   - text: "Here are some common questions about digital pathology. Click one to see the answer:"
+  #     buttons:
+  #       - title: "What is digital pathology?"
+  #         payload: '/ask_general_question1'
+  #       - title: "How does whole slide imaging work?"
+  #         payload: '/ask_general_question2'
+  #       - title: "Do I need special hardware?"
+  #         payload: '/ask_general_question3'
+  #       - title: "Can slides be shared digitally?"
+  #         payload: '/ask_general_question4'
+  #       - title: "Is my data secure?"
+  #         payload: '/ask_general_question5'
+
+  # FAQ Answers - General
+  utter_answer_general1:
+    - text: "Digital pathology uses slide scanners to create high-resolution images."
+
+  utter_answer_general2:
+    - text: "Whole slide imaging converts glass slides into digital images viewable on a computer."
+
+  utter_answer_general3:
+    - text: "Digital slides can be viewed on any modern computer with a stable internet connection."
+
+  utter_answer_general4:
+    - text: "Systems generally use encrypted storage and secure data transfer. Access is controlled through authenticated accounts and permissions, ensuring that only authorized users can view or download files."
+
+  utter_answer_general5:
+    - text: "Yes. Digital slides can be shared securely through the platform using links or access permissions."
