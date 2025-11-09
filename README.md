@@ -37,6 +37,7 @@ pip install requirements.txt
 ## Setting up the Server
 ### Run the RASA server locally
 ```cmd
+cd server
 rasa run --enable-api --cors "*"
 ```
 Open **index.html** in your browser to view the chatbot widget.

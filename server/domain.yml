@@ -8,22 +8,6 @@ version: "3.1"
 
 # Chatbot responses
 responses:
-  # utter_ask_recipient:
-  #   - text: "Who would you like to send money to?"
-
-  # utter_ask_final_confirmation:
-  #   - text: "Please confirm: you want to transfer {amount} to {recipient}?"
-  # utter_transfer_cancelled:
-  #   - text: "Your transfer has been cancelled."
-
-  # utter_ask_amount:
-  #   - text: "How much money would you like to send?"
-
-  # utter_transfer_complete:
-  #   - text: "All done. {amount} has been sent to {recipient}."
-
-  # utter_insufficient_funds:
-  #   - text: "You do not have enough funds to make this transaction."
 
   utter_free_chitchat_response:
     - text: "placeholder"
@@ -38,20 +22,6 @@ responses:
           {{history}}
           {{current_input}}
           Suggested AI Response:
-
-  # utter_general_faq:
-  #   - text: "Here are some common questions about digital pathology. Click one to see the answer:"
-  #     buttons:
-  #       - title: "What is digital pathology?"
-  #         payload: '/ask_general_question1'
-  #       - title: "How does whole slide imaging work?"
-  #         payload: '/ask_general_question2'
-  #       - title: "Do I need special hardware?"
-  #         payload: '/ask_general_question3'
-  #       - title: "Can slides be shared digitally?"
-  #         payload: '/ask_general_question4'
-  #       - title: "Is my data secure?"
-  #         payload: '/ask_general_question5'
 
   # FAQ Answers - General
   utter_answer_general1:
