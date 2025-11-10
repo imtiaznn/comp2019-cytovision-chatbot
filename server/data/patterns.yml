@@ -9,3 +9,7 @@ flows:
     name: pattern search
     steps:
       - action: utter_free_chitchat_response
+  pattern_completed:
+    description: Flow to be run after completing a pattern
+    steps:
+      - action: action_listen
