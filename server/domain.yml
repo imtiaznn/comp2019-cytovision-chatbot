@@ -5,6 +5,36 @@ version: "3.1"
 
 # Values that are read and written to by chatbot
 # slots:
+intents:
+  - general_question_1
+  - general_question_2
+  - general_question_3
+  - general_question_4
+  - general_question_5
+
+  - services_question_1
+  - services_question_2
+  - services_question_3
+  - services_question_4
+  - services_question_5
+  - services_question_6
+
+  - pricing_question_1
+  - pricing_question_2
+  - pricing_question_3
+  - pricing_question_4
+  - pricing_question_5
+
+  - troubleshoot_question_1
+  - troubleshoot_question_2
+  - troubleshoot_question_3
+  - troubleshoot_question_4
+  - troubleshoot_question_5
+
+  - contact_question_1
+  - contact_question_2
+  - contact_question_3
+  - contact_question_4
 
 # Chatbot responses
 responses:
@@ -38,3 +68,67 @@ responses:
 
   utter_answer_general5:
     - text: "Yes. Digital slides can be shared securely through the platform using links or access permissions."
+
+    #Products and Services
+  utter_services_1:
+    - text: "Cytovision provides whole slide imaging, digital pathology support, and AI-assisted analysis."
+
+  utter_services_2:
+    - text: "Yes, we provide high-resolution whole slide scanning services."
+
+  utter_services_3:
+    - text: "Yes, we offer AI-assisted pathology analysis for supported slide types."
+
+  utter_services_4:
+    - text: "Our scanners support high-resolution imaging up to 40x, depending on the system."
+
+  utter_services_5:
+    - text: "Yes, we accept both clinical and research slides depending on client requirements."
+
+  utter_services_6:
+    - text: "Slides are typically stored securely for a defined period; long-term storage options are also available."
+
+# Pricing
+  utter_pricing_1:
+    - text: "Scanning prices vary depending on slide volume and resolution. Please contact us for a quotation."
+
+  utter_pricing_2:
+    - text: "Yes, bulk discounts are available for large slide batches."
+
+  utter_pricing_3:
+    - text: "Long-term digital storage may incur additional fees depending on storage duration."
+
+  utter_pricing_4:
+    - text: "Pricing may differ between clinical and research samples. Please contact us for detailed rates."
+
+  utter_pricing_5:
+    - text: "You can request an official quotation through our email or contact form."
+
+#Troubleshooting
+  utter_troubleshoot_1:
+    - text: "If you cannot open your slide file, ensure your viewer supports formats like SVS, NDPI, or TIFF."
+
+  utter_troubleshoot_2:
+    - text: "Blurry slides may be caused by out-of-focus scans. Please request re-scanning if needed."
+
+  utter_troubleshoot_3:
+    - text: "Download links may expire for security reasons. You can request a renewed link."
+
+  utter_troubleshoot_4:
+    - text: "If you cannot log in, please check your account credentials or reset your password."
+
+  utter_troubleshoot_5:
+    - text: "Slow viewer performance may be caused by network issues or large file sizes. Try reloading or switching networks."
+
+#Contact Us
+  utter_contact_1:
+    - text: "You can contact Cytovision through our official email or contact form on the website."
+
+  utter_contact_2:
+    - text: "Phone support may be available depending on operating hours. Please refer to our contact page."
+
+  utter_contact_3:
+    - text: "Our operating hours are typically Monday-Friday, 9AM-6PM."
+
+  utter_contact_4:
+    - text: "We are based in Malaysia. For more details, please check our website's contact page."
