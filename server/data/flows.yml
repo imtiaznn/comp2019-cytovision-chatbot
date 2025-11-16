@@ -1,5 +1,5 @@
 flows:
-
+#General
   general_question1:
     description: "Give a brief description on digital pathology"
     steps:
@@ -24,3 +24,107 @@ flows:
     description: "Explain whether digital slides can be shared with colleagues or external partners"
     steps:
       - action: utter_answer_general5
+
+      #Products and Services
+  services_question_1:
+    description: "What services does Cytovision provide?"
+    steps:
+      - action: utter_services_1
+
+  services_question_2:
+    description: "Do you offer whole slide scanning?"
+    steps:
+      - action: utter_services_2
+
+  services_question_3:
+    description: "Do you provide AI-assisted analysis?"
+    steps:
+      - action: utter_services_3
+
+  services_question_4:
+    description: "What resolution can your scanners achieve?"
+    steps:
+      - action: utter_services_4
+
+  services_question_5:
+    description: "Do you accept clinical and research slides?"
+    steps:
+      - action: utter_services_5
+
+  services_question_6:
+    description: "How long are slides stored?"
+    steps:
+      - action: utter_services_6
+
+#Pricing
+  pricing_question_1:
+    description: "How much does scanning cost?"
+    steps:
+      - action: utter_pricing_1
+
+  pricing_question_2:
+    description: "Do you offer bulk discounts?"
+    steps:
+      - action: utter_pricing_2
+
+  pricing_question_3:
+    description: "Are there storage fees?"
+    steps:
+      - action: utter_pricing_3
+
+  pricing_question_4:
+    description: "Is pricing different for clinical vs research samples?"
+    steps:
+      - action: utter_pricing_4
+
+  pricing_question_5:
+    description: "How to get an official quotation?"
+    steps:
+      - action: utter_pricing_5
+
+#Troubleshooting
+  troubleshoot_question_1:
+    description: "Why can't I open my slide file?"
+    steps:
+      - action: utter_troubleshoot_1
+
+  troubleshoot_question_2:
+    description: "Why is my slide blurry?"
+    steps:
+      - action: utter_troubleshoot_2
+
+  troubleshoot_question_3:
+    description: "My download link expired"
+    steps:
+      - action: utter_troubleshoot_3
+
+  troubleshoot_question_4:
+    description: "Cannot log into viewer"
+    steps:
+      - action: utter_troubleshoot_4
+
+  troubleshoot_question_5:
+    description: "Viewer is slow or laggy"
+    steps:
+      - action: utter_troubleshoot_5
+
+#Contact Us
+  contact_question_1:
+    description: "How to contact Cytovision?"
+    steps:
+      - action: utter_contact_1
+
+  contact_question_2:
+    description: "Do you have phone support?"
+    steps:
+      - action: utter_contact_2
+
+  contact_question_3:
+    description: "What are your operating hours?"
+    steps:
+      - action: utter_contact_3
+
+  contact_question_4:
+    description: "Where are you located?"
+    steps:
+      - action: utter_contact_4
