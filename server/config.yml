@@ -10,6 +10,8 @@ pipeline:
     model_group: rasa_command_generation_model
   flow_retrieval:
     active: false
+  fallback_threshold: 0.70
+  pattern_threshold: 0.90
 
 policies:
 - name: FlowPolicy

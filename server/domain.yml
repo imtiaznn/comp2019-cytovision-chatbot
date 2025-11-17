@@ -1,10 +1,19 @@
 version: "3.1"
 
 # Custom actions defined in actions.py
-# actions:
+actions:
+  - default_llm_response
 
 # Values that are read and written to by chatbot
-# slots:
+slots:
+  interest_level:
+    type: bool
+
+  user_name: 
+    type: text
+
+  user_email:
+    type: text
 
 # Chatbot responses
 responses:
@@ -25,16 +34,16 @@ responses:
 
   # FAQ Answers - General
   utter_answer_general1:
-    - text: "Digital pathology uses slide scanners to create high-resolution images."
+    - text: "Digital pathology is the practice of digitizing glass pathology slides into high-resolution images, which allows pathologists to view, analyze, and share slides electronically instead of using a microscope."
 
   utter_answer_general2:
-    - text: "Whole slide imaging converts glass slides into digital images viewable on a computer."
+    - text: "Whole Slide Imaging, or WSI, refers to scanning entire pathology slides at high resolution to create digital images, enabling detailed examination and remote access."
 
   utter_answer_general3:
-    - text: "Digital slides can be viewed on any modern computer with a stable internet connection."
+    - text: "To view digital slides, you typically need a standard computer or tablet and software capable of opening whole slide image formats. Specialized viewers or plugins may be required for annotations or advanced analysis."
 
   utter_answer_general4:
-    - text: "Systems generally use encrypted storage and secure data transfer. Access is controlled through authenticated accounts and permissions, ensuring that only authorized users can view or download files."
+    - text: "User data is secured through encryption, access controls, and compliance with privacy regulations such as HIPAA or GDPR, ensuring that patient information remains confidential."
 
   utter_answer_general5:
-    - text: "Yes. Digital slides can be shared securely through the platform using links or access permissions."
+    - text: "Digital slides can be shared securely with colleagues or external partners through authorized platforms, often using encrypted links or secure portals, while maintaining compliance with data privacy regulations."

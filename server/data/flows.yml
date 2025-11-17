@@ -1,26 +1,39 @@
 flows:
 
-  general_question1:
+  default_response:
+    description: "The default response when the user message does not fit into any FAQ"
+    steps:
+      - action: default_llm_response
+
+# Flows for capturing user information when the user shows enough interest on a product
+  # capture_lead:
+  #   description: "When a user shows interest, ask for their details to turn into a potential lead"
+  #   steps:
+  #     - collect: user_name
+  #     - collect: user_email
+
+# Flows for answering FAQs
+  faq_general_question1:
     description: "Give a brief description on digital pathology"
     steps:
       - action: utter_answer_general1
 
-  general_question2:
-    description: "Explain the difference between whole slide imaging and digital microscopy"
+  faq_general_question2:
+    description: "Give a brief description of whole slide imaging"
     steps:
       - action: utter_answer_general2
 
-  general_question3:
+  faq_general_question3:
     description: "Give a brief description on any special hardware or software needed to view digital slides"
     steps:
       - action: utter_answer_general3
 
-  general_question4:
+  faq_general_question4:
     description: "Explain whether the user data is safe when using digital pathology systems"
     steps:
       - action: utter_answer_general4
       
-  general_question5:
+  faq_general_question5:
     description: "Explain whether digital slides can be shared with colleagues or external partners"
     steps:
       - action: utter_answer_general5

@@ -1,19 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cytovision Chatbot</title>
-    <script
-      type="module"
-      src="https://unpkg.com/@rasahq/chat-widget-ui/dist/rasa-chatwidget/rasa-chatwidget.esm.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@rasahq/chat-widget-ui/dist/rasa-chatwidget/rasa-chatwidget.css"
-    />
-  </head>
-  <body>
-    <rasa-chatbot-widget server-url="http://localhost:5005"></rasa-chatbot-widget>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cytovision Chatbot</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+	<script src="index.js" defer></script>
+
+</head>
+<body>
+
+	<!-- Floating Chatbox -->
+	<div class="chatbot-container" id="chatbot-toggle">
+		<!-- Floating Chat Button -->
+		<button id="chatbot-icon"><img src="./assets/chatbot.png" id="chatbot-logo"/></button>
+		<span id="chatbot-msg">Chat with Us!</span>		
+	</div>
+
+	<!-- Chatbox Panel -->
+	<div class="chatbox" id="chatbox">
+		
+		<div class="chatbox-header">
+			<span>Cytovision Chatbot</span>
+			<button id="chatbox-close">&times;</button>
+		</div>
+
+		<div class="chatbox-body">
+
+			<div id="messages"></div>
+
+			<div class="chatbox-input">
+				<input type="text" placeholder="Type a message..." id="user-input"/>
+				<button onclick="sendMessage()"><img src="./assets/send-arrow.png" id="send-icon"/></button>
+			</div>
+
+		</div>
+    
+	</div>
+
+</body>
+
 </html>
